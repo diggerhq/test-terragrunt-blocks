@@ -19,7 +19,7 @@ jobs:
       steps:
 
         - name: Vault OIDC Auth
-          uses: hashicorp/vault-action@v2.8.0
+          uses: hashicorp/vault-action@v3.0.0
           id: vault
           with:
             url: ${{ secrets.VAULT_ADDR }}
@@ -33,7 +33,7 @@ jobs:
           run: git config --global url."https://oauth2:${{ steps.vault.outputs.gh_token }}@github.com".insteadOf ssh://git@github.com # replace ssh auth with https token auth for private terraform-module repo
 
         - name: digger run
-          uses: diggerhq/digger@v0.4.9
+          uses: diggerhq/digger@v0.4.14
           with:
             digger-token: ${{ secrets.DIGGER_TOKEN_DEVEL }}
             digger-organisation: "Zeit Online"
