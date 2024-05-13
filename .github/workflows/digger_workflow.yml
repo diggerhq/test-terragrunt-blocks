@@ -30,6 +30,8 @@ jobs:
             setup-aws: true #needed, or auth step is skipped
             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            upload-plan-destination: aws
+            upload-plan-destination-s3-bucket: digger-tests-bucket
           env:
             GITHUB_CONTEXT: ${{ toJson(github) }}
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
