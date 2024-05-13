@@ -24,8 +24,9 @@ jobs:
       steps:
 
         - name: digger run
-          uses: diggerhq/digger@v0.4.20
+          uses: diggerhq/digger@feat/group-by-modules
           with:
+            setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
