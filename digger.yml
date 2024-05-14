@@ -1,3 +1,5 @@
+comment_render_mode: "group_by_module"
+
 generate_projects:
   terragrunt_parsing:
     rootDir: "projects/"
