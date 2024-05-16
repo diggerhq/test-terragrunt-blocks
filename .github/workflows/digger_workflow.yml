@@ -24,7 +24,7 @@ jobs:
       steps:
 
         - name: digger run
-          uses: diggerhq/digger@v0.4.26
+          uses: diggerhq/digger@vfix/supress-json-plan
           with:
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
