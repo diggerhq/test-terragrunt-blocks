@@ -24,7 +24,7 @@ jobs:
       steps:
 
         - name: digger run
-          uses: diggerhq/digger@fix/supress-json-plan
+          uses: diggerhq/digger@feat/render-summary-as-markdown-table
           with:
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
