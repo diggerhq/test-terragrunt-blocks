@@ -22,7 +22,9 @@ jobs:
         statuses: write      # required to validate combined PR status
 
       steps:
-
+        - name: ${{github.event.inputs.id}}
+          run: echo job id ${{ inputs.id }} 
+          
         - name: digger run
           uses: diggerhq/digger@feat/link-from-summary-to-comment
           with:
