@@ -24,7 +24,7 @@ jobs:
       steps:
 
         - name: digger run
-          uses: diggerhq/digger@fix/locking-project-report-failure-status
+          uses: diggerhq/digger@feat/link-from-summary-to-comment
           with:
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
