@@ -26,7 +26,7 @@ jobs:
           run: echo job id ${{ inputs.id }} 
           
         - name: digger run
-          uses: diggerhq/digger@feat/group-by-modules
+          uses: diggerhq/digger@fix/comment-of-plan)
           with:
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
