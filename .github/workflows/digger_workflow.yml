@@ -10,6 +10,10 @@ on:
         required: true
       comment_id:
         required: true
+      run_name:
+        required: false
+
+run-name: ${{inputs.run_name}}
 
 jobs:
     run-digger:
@@ -26,7 +30,7 @@ jobs:
           run: echo job id ${{ inputs.id }} 
           
         - name: digger run
-          uses: diggerhq/digger@vbackend-locks-test
+          uses: diggerhq/digger@feat/support-terragrunt-blocks
           with:
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
