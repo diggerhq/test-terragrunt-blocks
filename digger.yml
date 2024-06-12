@@ -3,15 +3,15 @@ generate_projects:
   blocks:
     - block_name: dev
       terragrunt: true
-      rootDir: "projects/test1"
+      root_dir: "projects/test1"
       workflow: default
     - block_name: staging
       terragrunt: true
-      rootDir: "projects/test2"
+      root_dir: "projects/test2"
       workflow: default
     - block_name: production
       terragrunt: true
-      rootDir: "projects/test3"
+      root_dir: "projects/test3"
       workflow: default
 
 workflows:
