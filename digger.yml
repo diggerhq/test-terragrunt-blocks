@@ -9,6 +9,7 @@ generate_projects:
       terragrunt: true
       dir: "projects/test1"
       workflow: default
+      workflow_file: digger_workflow.yml
     - block_name: staging
       terragrunt: true
       dir: "projects/test2"
