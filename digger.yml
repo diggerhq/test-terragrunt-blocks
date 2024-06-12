@@ -9,7 +9,7 @@ generate_projects:
       terragrunt: true
       rootDir: "projects/test2"
       workflow: default
-    - block_name: dev
+    - block_name: production
       terragrunt: true
       rootDir: "projects/test3"
       workflow: default
