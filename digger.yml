@@ -1,6 +1,10 @@
 
 generate_projects:
   blocks:
+    - block_name: xx
+      terragrunt: true
+      root_dir: ""
+      workflow: default
     - block_name: dev
       terragrunt: true
       root_dir: "projects/test1"
