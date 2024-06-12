@@ -12,7 +12,7 @@ generate_projects:
       workflow: default
     - block_name: prod
       terragrunt: true
-      dir: "projects/test1"
+      dir: "projects/test3"
       workflow: default
 
 workflows:
