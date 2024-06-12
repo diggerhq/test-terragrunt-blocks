@@ -6,6 +6,7 @@ generate_projects:
       root_dir: "projects/test1"
       workflow: default
 
+
 workflows:
   default:
     plan:
