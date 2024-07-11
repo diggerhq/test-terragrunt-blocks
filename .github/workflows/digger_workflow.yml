@@ -25,7 +25,7 @@ jobs:
           run: echo job id ${{ inputs.id }} 
           
         - name: digger run
-          uses: diggerhq/digger@feat/support-terragrunt-blocks
+          uses: diggerhq/digger@feat/get-spec-endpoint
           with:
             digger-spec: ${{inputs.spec}}
             setup-terragrunt: true
