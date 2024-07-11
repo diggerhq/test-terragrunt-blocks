@@ -22,8 +22,8 @@ jobs:
 
       steps:
         - name: ${{github.event.inputs.id}}
-          run: echo job id ${{ inputs.id }} 
-          
+          run: echo job id ${{ inputs.id }}
+        
         - name: digger run
           uses: diggerhq/digger@feat/get-spec-endpoint
           with:
