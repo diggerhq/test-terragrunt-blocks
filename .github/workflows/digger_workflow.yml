@@ -39,3 +39,5 @@ jobs:
             GITHUB_CONTEXT: ${{ toJson(github) }}
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             DEBUG: 'true'
+            DIGGER_MANAGEMENT_REPO: "https://github.com/diggerhq/test-terragrunt-blocks"
+            
