@@ -1,3 +1,6 @@
+resource "null_resource" "test" {}
+
+
 # resource "google_storage_bucket" "test3" {
 #   name          = "digger-poc-${var.environment}-test3"
 #   location      = "EUROPE-WEST3"
