@@ -21,9 +21,8 @@ jobs:
         statuses: write      # required to validate combined PR status
 
       steps:
-        - name: ${{github.event.inputs.id}}
-          run: echo job id ${{ inputs.id }}
-        
+        - name: ${{ fromJSON(github.event.inputs.spec).job_id }}
+          run: echo "job id ${{ fromJSON(github.event.inputs.spec).job_id }}"        
         - name: digger run
           uses: diggerhq/digger@feat/get-spec-endpoint
           with:
