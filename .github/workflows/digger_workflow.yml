@@ -27,6 +27,7 @@ jobs:
         - name: digger run
           uses: diggerhq/digger@feat/get-spec-endpoint
           with:
+            ee: 'true'
             digger-spec: ${{inputs.spec}}
             setup-terragrunt: true
             setup-aws: true #needed, or auth step is skipped
@@ -35,6 +36,7 @@ jobs:
             upload-plan-destination: aws
             upload-plan-destination-s3-bucket: digger-tests-bucket
           env:
+            DIGGER_LICENSE_KEY: ${{ secrets.DIGGER_LICENSE_KEY }}
             GITHUB_CONTEXT: ${{ toJson(github) }}
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             DEBUG: 'true'
