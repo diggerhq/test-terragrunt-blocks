@@ -24,7 +24,7 @@ jobs:
         - name: ${{ fromJSON(github.event.inputs.spec).job_id }}
           run: echo "job id ${{ fromJSON(github.event.inputs.spec).job_id }}"        
         - name: digger run
-          uses: diggerhq/digger@vtest-exec
+          uses: diggerhq/digger@v0.6.11
           with:
             ee: 'true'
             digger-spec: ${{inputs.spec}}
