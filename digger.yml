@@ -1,19 +1,24 @@
 
 generate_projects:
-  blocks:
-    - block_name: dev
-      terragrunt: true
-      root_dir: "projects/test1"
-      workflow: default
-    - block_name: staging
-      terragrunt: true
-      root_dir: "projects/test2"
-      workflow: default
-    - block_name: prod
-      terragrunt: true
-      root_dir: "projects/test3"
-      workflow: default
-
+  terragrunt_parsing:
+    parallel: true
+    createProjectName: true
+    createWorkspace: true
+    defaultWorkflow: default
+#  blocks:
+#    - block_name: dev
+#      terragrunt: true
+#      root_dir: "projects/test1"
+#      workflow: default
+#    - block_name: staging
+#      terragrunt: true
+#      root_dir: "projects/test2"
+#      workflow: default
+#    - block_name: prod
+#      terragrunt: true
+#      root_dir: "projects/test3"
+#      workflow: default
+#
 workflows:
   default:
     plan:
