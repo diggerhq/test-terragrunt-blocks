@@ -11,7 +11,7 @@ generate_projects:
       workflow: default
     - block_name: prod
       terragrunt: true
-      root_dir: "projects/test1"
+      root_dir: "projects/test3"
       workflow: default
 
 workflows:
